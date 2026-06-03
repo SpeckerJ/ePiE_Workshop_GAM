@@ -9,7 +9,7 @@
         <link rel="prev" href="../ePiE_webapp_GAM/">
       
       
-        <link rel="next" href="../discussion/">
+        <link rel="next" href="../Interpretation_Discussion/">
       
       
         
@@ -448,14 +448,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../discussion/" class="md-nav__link">
+      <a href="../Interpretation_Discussion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Discussion
+    Interpretation &amp; Discussion
   
 
     
@@ -663,15 +663,15 @@
   <h1>Exercises</h1>
 
 <h2 id="preparation">Preparation</h2>
-<p>Please download the following excel file. The file includes the necessary data for the following exercises and a template to store the results of the exercises. Please also download the API example template provided on the ePiE webpage and load it into ePiE as described previously under "How to: The ePiE App - API properties".</p>
-<p><a class="md-button" download="API_GAM_Workshop" href="../API_workshop%201.xlsx">API Data</a></p>
+<p>Please download the following Excel file. The file includes the necessary data for the following exercises and a template to store the results of the exercises. If not done so previously, please also download the API example template provided on the ePiE webpage and load it into ePiE as described under "How to: The ePiE App - API properties".</p>
+<p><a class="md-button" download="API_GAM_Workshop" href="../API_workshop_template.xlsx">Workshop Template</a></p>
 <h2 id="exercise-1-simpletreat-vs-pepper">Exercise 1: SimpleTreat vs. PEPPER</h2>
-<p>ePiE stands out for its high degree of customisability. Most parameters can be overwritten, allowing users to use experimental data or other models.
+<p>ePiE stands out for its high degree of customizability. Most parameters can be overwritten, allowing users to use experimental data or other models.
 In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environmental Pollutant PERsistence
-) model, which is freely accessible as a web application via the following <a href="https://pepper-app.streamlit.app/">link</a>. More information on the PEPPER model can be found under the webapplication or in its respective publication by <a href="https://pubs.acs.org/doi/full/10.1021/acs.est.5c09314">Cordero Solano et al. 2025</a>.</p>
+) model, which is freely accessible as a web application via the following <a href="https://pepper-app.streamlit.app/">link</a>. More information on the PEPPER model can be found under the web application or in its respective publication by <a href="https://pubs.acs.org/doi/full/10.1021/acs.est.5c09314">Cordero Solano et al. 2025</a>.</p>
 <p>To use PEPPER, please follow the points outlined below:</p>
 <ol>
-<li>Go to the Pepper website</li>
+<li>Go to the PEPPER website</li>
 <li>
 <p>Click on "Single Molecule" (Figure 1)</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/screenshots/PEPPER/pepper_screen1.png" data-desc-position="bottom"><img src="../img/screenshots/PEPPER/pepper_screen1.png" alt="img1" style="width: 100%; max-width: 600px; height: 50%;"></a>
@@ -696,7 +696,7 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/screenshots/PEPPER/pepper_screen4.png" data-desc-position="bottom"><img src="../img/screenshots/PEPPER/pepper_screen4.png" alt="img1" style="width: 100%; max-width: 600px; height: 50%;"></a></p>
 <figcaption>Figure 4</figcaption>
 <p><br></p>
-<p>The calculated removal fraction by PEPPER can be included in ePiE under the "WWTP removal" tab. For this, edit the table and set either the primary or secondary removal fraction to 0<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, and include the PEPPER value in the other removal fraction, as exemplary shown below in Figure 5 for sulfamethoxazole.</p>
+<p>The calculated removal fraction by PEPPER can be included in ePiE under the "WWTP removal" tab. For this, edit the table and set either the primary or secondary removal fraction to 0<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, and include the PEPPER value in the other removal fraction, as exemplified below in Figure 5 for sulfamethoxazole.</p>
 <p><br>
 <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../img/screenshots/PEPPER/pepper_screen5.png" data-desc-position="bottom"><img src="../img/screenshots/PEPPER/pepper_screen5.png" alt="img1" style="width: 100%; max-width: 600px; height: 50%;"></a></p>
 <figcaption>Figure 5</figcaption>
@@ -724,11 +724,11 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 <li>Compare the predicted concentrations under the "Output statistics" tab for both river basins</li>
 </ol>
 <h2 id="exercise-3-excretion-factors">Exercise 3: Excretion Factors</h2>
-<p>Next to removal rates and consumption data, the excreted fraction of an API after administration is a critical and sensitive parameter driving the model results. Data on excretion, also referred to as elimination, can normally be found in the summary of product characteristics (SmPCs), which outlines how to use the medicine safely including maximum dosage, potential side effects, and also data on metabolism. Nevertheless, reported excretion rates may differ between different source. In this exercise, we will assess the influence of this parameter for ibuprofen</p>
+<p>Next to removal rates and consumption data, the excreted fraction of an API after administration is a critical and sensitive parameter driving the model results. Data on excretion, also referred to as elimination, can normally be found in the summary of product characteristics (SmPCs), which outlines how to use the medicine safely including maximum dosage, potential side effects, and also data on metabolism. Nevertheless, reported excretion rates may differ between different sources. In this exercise, we will assess the influence of this parameter for ibuprofen.</p>
 <h3 id="exercise-3-instructions">Exercise 3: Instructions</h3>
 <ol>
 <li>Adjust the default parameter of ibuprofen for its excreted fraction (f_uf) under the "API properties" tab<ol>
-<li>The default parameters for f_uf is 0.2</li>
+<li>The default parameter for f_uf is 0.2</li>
 <li>Change f_uf to 0.1<ol>
 <li>Reported values range between 0.1 - 0.3 according to <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></li>
 </ol>
@@ -742,7 +742,7 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 <li>Compare the predicted concentrations for the three excretion fractions (e.g., f_uf = 0.1; 0.2; 1) under the "Output statistics" tab</li>
 </ol>
 <h2 id="exercise-4-excretion-and-removal-rates">Exercise 4: Excretion and Removal Rates</h2>
-<p>The previous exercises demonstrated how individual model input parameters and uncertainty around these can substantially influence the model outcomes. This exercise will assess the influence of two parameters in combination: Excretion and removal rates. For this we will assume a worst-case scenario, i.e. full excretion and no removal.</p>
+<p>The previous exercises demonstrated how individual model input parameters and uncertainty around these can substantially influence the model outcomes. This exercise will assess the influence of two parameters in combination: Excretion and removal rates. For this, we will assume a worst-case scenario, i.e. full excretion and no removal.</p>
 <h3 id="exercise-4-instructions">Exercise 4: Instructions</h3>
 <ol>
 <li>Adjust the default parameter of ibuprofen for its excreted fraction (f_uf) under the "API properties" tab<ol>
@@ -752,14 +752,14 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 <li>Set both removal fractions to 0 under the "WWTP removal" tab </li>
 <li>Select the Ouse (Yorkshire) basin for average yearly flow conditions (default) under the "River basin" tab</li>
 <li>Use (<mark><strong>UK DATA</strong></mark>) as consumption data for the year 2019 under the "Consumption data" tab</li>
-<li>Compare the predicted concentrations against the predicted concentrations to the results form exercises 2 &amp; 3 </li>
+<li>Compare the predicted concentrations against the predicted concentrations to the results from exercises 2 &amp; 3 </li>
 </ol>
 <h2 id="exercise-5-comparison-to-conventional-exposure-assessments">Exercise 5: Comparison to Conventional Exposure Assessments</h2>
 <p>Predicting environmental concentrations can be achieved by multiple ways. The most conventional and conservative approach follows the equation below: </p>
 <div class="arithmatex">\[
 PEC_{SW} = \frac{\text{Administered Dose} \times \text{Market Penetration}}{\text{Wastewater Volume} \times \text{Dilution}}
 \]</div>
-<p>This approach represents a conservative scenario, assuming no removal inside WWTP and complete excretion of the administered dose. Only the market penetration factor, by default 0.01, is used to adjust the dose. The default values for the wastewater volume are 200 L and 10 for the dilution factor. In this exercise, we are going to apply the conventional approach and compare it to our previous results. It should be noted, that this conventional approach cannot be directly replicated as ePiE accounts for the population size per basin and assumes individual wastewater volumes and dilution factors based on its underlying data.</p>
+<p>This approach represents a conservative scenario, assuming no removal inside WWTP and complete excretion of the administered dose. Only the market penetration factor, by default 0.01, is used to adjust the dose. The default values for the wastewater volume are 200 L and 10 for the dilution factor. In this exercise, we are going to apply the conventional approach and compare it to our previous results. It should be noted that this conventional approach cannot be directly replicated as ePiE accounts for the population size per basin and assumes individual wastewater volumes and dilution factors based on its underlying data.</p>
 <h3 id="exercise-5-instructions">Exercise 5: Instructions</h3>
 <ol>
 <li>Adjust the default parameter of ibuprofen for its excreted fraction (f_uf) under the "API properties" tab<ol>
@@ -772,8 +772,8 @@ PEC_{SW} = \frac{\text{Administered Dose} \times \text{Market Penetration}}{\tex
 <li>Select minimum yearly flow</li>
 </ol>
 </li>
-<li>Use 4.38 g/capita/year as consumption data for the year 2019 under the "Consumption data" tab</li>
-<li>Compare the predicted concentrations against the predicted concentrations to the results form exercises 2 &amp; 3 and per hydrological scenario</li>
+<li>Use 4.38<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> g/capita/year as consumption data for the year 2019 under the "Consumption data" tab</li>
+<li>Compare the predicted concentrations against the results from exercises 2 and 3 and per hydrological scenario.</li>
 </ol>
 <div class="footnote">
 <hr>
@@ -786,6 +786,9 @@ PEC_{SW} = \frac{\text{Administered Dose} \times \text{Market Penetration}}{\tex
 </li>
 <li id="fn:3">
 <p>https://pdf.hres.ca/dpd_pm/00025353.PDF&nbsp;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">↩</a></p>
+</li>
+<li id="fn:4">
+<p>1.2 g is the maximum daily dose of ibuprofen; 1.2 g * 0.01 * 365 days = 4.38 g/capita/year&nbsp;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">↩</a></p>
 </li>
 </ol>
 </div>
@@ -835,13 +838,13 @@ PEC_{SW} = \frac{\text{Administered Dose} \times \text{Market Penetration}}{\tex
         
         
           
-          <a href="../discussion/" class="md-footer__link md-footer__link--next" aria-label="Next: Discussion">
+          <a href="../Interpretation_Discussion/" class="md-footer__link md-footer__link--next" aria-label="Next: Interpretation &amp; Discussion">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Discussion
+                Interpretation &amp; Discussion
               </div>
             </div>
             <div class="md-footer__button md-icon">

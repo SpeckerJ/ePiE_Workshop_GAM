@@ -65,7 +65,7 @@ The calculated removal fraction by PEPPER can be included in ePiE under the "WWT
 
 Please compare the results using the default SimpleTreat and the PEPPER model using the instructions below:
 
-1. Predict the breakthrough for ibuprofen and acetaminophen as calculated by PEPPER and convert the results to the removed fraction
+1. Predict the breakthrough for ibuprofen, acetaminophen, and sulfamethoxazole as calculated by PEPPER and convert the results to the removed fraction
 2. Apply the default properties in ePiE under the "API properties" tab
 3. Compare the removal fractions of both compounds from SimpleTreat and the PEPPER model under the "WWTP removal" tab
 4. Select the Ouse (Yorkshire) and the Rhine 1 basin for average yearly flow conditions under the "River basin" tab
