@@ -4,7 +4,18 @@
 Please download the following Excel file. The file includes the necessary data for the following exercises and a template to store the results of the exercises. If not done so previously, please also download the API example template provided on the ePiE webpage and load it into ePiE as described under "How to: The ePiE App - API properties".
 
 
+
 [Workshop Template](API_workshop_template.xlsx){: .md-button download="API_GAM_Workshop"}
+
+In the table below, an overview is presented about the following exercises and the key model parameters we are investigating.   
+
+| Exercise |                      Objective                      |                          Model    Parameters                          |
+|:--------:|:---------------------------------------------------:|:----------------------------------------------------------------:|
+|     1    |              Compare WWTP Removal Rates             |                           Removal Rates                          |
+|     2    |          Impact of refined consumption data         |                            Consumption                           |
+|     3    |        Influence of variable excretion rates        |                          Excretion rates                         |
+|     4    |            Worst-case: Excretion and removal           |                  Excretion rates and Removal Rates                 |
+|     5    | Conventional exposure assessments and low-flow events | Excretion rates, Removal Rates, consumption, and flow conditions |
 
 
 ## Exercise 1: SimpleTreat vs. PEPPER
@@ -78,16 +89,16 @@ Please compare the results using the default SimpleTreat and the PEPPER model us
 
 Data on API consumption is crucial in driving ePiE's model outcomes. However, specific data might be difficult to obtain for individual APIs and countries. To address these issues, we refer to the PREMIER guidance document 4 (In prep.), which describes different approaches for predicting consumption data. 
 
-In this exercise, we are going to investigate how detailed consumption data can help refine ePiE's model outputs. For this, we are using data from [Cannata et al. (2024)](https://www.sciencedirect.com/science/article/pii/S0160412023006529?via%3Dihub) and from Oldenkamp et al. (In prep).
+In this exercise, we are going to investigate how detailed consumption data can help refine ePiE's model outputs. For this, we are using data from [Cannata et al. (2024)](https://www.sciencedirect.com/science/article/pii/S0160412023006529?via%3Dihub) and from [Austin et al. (2022)](https://www.sciencedirect.com/science/article/pii/S0013935122001049).
 
 ### Exercise 2: Instructions
 
 Please assess the predicted concentrations for ibuprofen using the instructions below:
 
-1. Use the default API-parameters for Ibuprofen under the "API properties" tab
+1. Use the default API-parameters for ibuprofen under the "API properties" tab
 2. Use SimpleTreat under the "WWTP removal" tab
 3. Select the Ouse (Yorkshire) and the Rhine 1 basin for average yearly flow conditions under the "River basin" tab
-4. Use once 8.6 g/capita/year and once (<mark>**UK DATA**</mark>) as consumption data for the year 2019 under the "Consumption data" tab
+4. For the consumption data, use once 8.6 g/capita/year for the year 2019 and once 6.21 g/capita/year for the year 2017 under the "Consumption data" tab
 5. Compare the predicted concentrations under the "Output statistics" tab for both river basins
 
 
