@@ -665,6 +665,43 @@
 <h2 id="preparation">Preparation</h2>
 <p>Please download the following Excel file. The file includes the necessary data for the following exercises and a template to store the results of the exercises. If not done so previously, please also download the API example template provided on the ePiE webpage and load it into ePiE as described under "How to: The ePiE App - API properties".</p>
 <p><a class="md-button" download="API_GAM_Workshop" href="../API_workshop_template.xlsx">Workshop Template</a></p>
+<p>In the table below, an overview is presented about the following exercises and the key model parameters we are investigating.   </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Exercise</th>
+<th style="text-align: center;">Objective</th>
+<th style="text-align: center;">Model    Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Compare WWTP Removal Rates</td>
+<td style="text-align: center;">Removal Rates</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Impact of refined consumption data</td>
+<td style="text-align: center;">Consumption</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Influence of variable excretion rates</td>
+<td style="text-align: center;">Excretion rates</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Worst-case: Excretion and removal</td>
+<td style="text-align: center;">Excretion rates and Removal Rates</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Conventional exposure assessments and low-flow events</td>
+<td style="text-align: center;">Excretion rates, Removal Rates, consumption, and flow conditions</td>
+</tr>
+</tbody>
+</table>
 <h2 id="exercise-1-simpletreat-vs-pepper">Exercise 1: SimpleTreat vs. PEPPER</h2>
 <p>ePiE stands out for its high degree of customizability. Most parameters can be overwritten, allowing users to use experimental data or other models.
 In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environmental Pollutant PERsistence
@@ -713,14 +750,14 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 </ol>
 <h2 id="exercise-2-consumption-data">Exercise 2: Consumption Data</h2>
 <p>Data on API consumption is crucial in driving ePiE's model outcomes. However, specific data might be difficult to obtain for individual APIs and countries. To address these issues, we refer to the PREMIER guidance document 4 (In prep.), which describes different approaches for predicting consumption data. </p>
-<p>In this exercise, we are going to investigate how detailed consumption data can help refine ePiE's model outputs. For this, we are using data from <a href="https://www.sciencedirect.com/science/article/pii/S0160412023006529?via%3Dihub">Cannata et al. (2024)</a> and from Oldenkamp et al. (In prep).</p>
+<p>In this exercise, we are going to investigate how detailed consumption data can help refine ePiE's model outputs. For this, we are using data from <a href="https://www.sciencedirect.com/science/article/pii/S0160412023006529?via%3Dihub">Cannata et al. (2024)</a> and from <a href="https://www.sciencedirect.com/science/article/pii/S0013935122001049">Austin et al. (2022)</a>.</p>
 <h3 id="exercise-2-instructions">Exercise 2: Instructions</h3>
 <p>Please assess the predicted concentrations for ibuprofen using the instructions below:</p>
 <ol>
-<li>Use the default API-parameters for Ibuprofen under the "API properties" tab</li>
+<li>Use the default API-parameters for ibuprofen under the "API properties" tab</li>
 <li>Use SimpleTreat under the "WWTP removal" tab</li>
 <li>Select the Ouse (Yorkshire) and the Rhine 1 basin for average yearly flow conditions under the "River basin" tab</li>
-<li>Use once 8.6 g/capita/year and once (<mark><strong>UK DATA</strong></mark>) as consumption data for the year 2019 under the "Consumption data" tab</li>
+<li>For the consumption data, use once 8.6 g/capita/year for the year 2019 and once 6.21 g/capita/year for the year 2017 under the "Consumption data" tab</li>
 <li>Compare the predicted concentrations under the "Output statistics" tab for both river basins</li>
 </ol>
 <h2 id="exercise-3-excretion-factors">Exercise 3: Excretion Factors</h2>
