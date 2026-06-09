@@ -20,9 +20,9 @@ In the table below, an overview is presented about the following exercises and t
 
 ## Exercise 1: SimpleTreat vs. PEPPER
 
-ePiE stands out for its high degree of customizability. Most parameters can be overwritten, allowing users to use experimental data or other models.
-In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environmental Pollutant PERsistence
-) model, which is freely accessible as a web application via the following [link](https://pepper-app.streamlit.app/). More information on the PEPPER model can be found under the web application or in its respective publication by [Cordero Solano et al. 2025](https://pubs.acs.org/doi/full/10.1021/acs.est.5c09314).
+ePiE stands out for its high degree of customizability. Most parameters can be overwritten, allowing users to use experimental data or other models. In this exercise, we will compare two tools to estimate WWTP removal, i.e. SimpleTreat and PEPPER (Predict Environmental Pollutant PERsistence).
+
+ PEPPER is freely accessible as a web application via the following [link](https://pepper-app.streamlit.app/). More information on the PEPPER model can be found under the web application or in its respective publication by [Cordero Solano et al. (2025)](https://pubs.acs.org/doi/full/10.1021/acs.est.5c09314).
 
 
 
@@ -79,10 +79,13 @@ Please compare the results using the default SimpleTreat and the PEPPER model us
 1. Predict the breakthrough for ibuprofen, acetaminophen, and sulfamethoxazole as calculated by PEPPER and convert the results to the removed fraction
 2. Apply the default properties in ePiE under the "API properties" tab
 3. Compare the removal fractions of both compounds from SimpleTreat and the PEPPER model under the "WWTP removal" tab
-4. Select the Ouse (Yorkshire) and the Rhine 1 basin for average yearly flow conditions under the "River basin" tab
+4. Select the "Ouse (Yorkshire)" and the "Rhine 1" basin for average yearly flow conditions under the "River basin" tab
 5. Assume a consumption of 1 g/capita/year for the year 2019 under the "Consumption data" tab
-7. Compare the predicted concentrations for both compounds and river basins under the "Output statistics" tab
+6. Run ePiE and assess the predicted concentrations under the "Output statistics" tab
 
+### Exercise 1: Questions
+
+1.	How do the predicted removal rates of SimpleTreat and PEPPER compare?
 
 
 ## Exercise 2: Consumption Data
@@ -111,13 +114,12 @@ Next to removal rates and consumption data, the excreted fraction of an API afte
 ### Exercise 3: Instructions
 
 1. Adjust the default parameter of ibuprofen for its excreted fraction (f_uf) under the "API properties" tab
-    2. The default parameter for f_uf is 0.2
-    3. Change f_uf to 0.1
+    2. Change f_uf to 0.1
          1. Reported values range between 0.1 - 0.3 according to [^2][^3]
-    4. Change f_uf to 1.0  
+    3. Change f_uf to 1.0  
 2. Use SimpleTreat under the "WWTP removal" tab
 3. Select the Ouse (Yorkshire) basin for average yearly flow conditions (default) under the "River basin" tab
-4. Use (<mark>**UK DATA**</mark>) as consumption data for the year 2019 under the "Consumption data" tab
+4. Use 6.21 g/capita/year as consumption data for the year 2017 under the "Consumption data" tab
 5. Compare the predicted concentrations for the three excretion fractions (e.g., f_uf = 0.1; 0.2; 1) under the "Output statistics" tab
   
 
