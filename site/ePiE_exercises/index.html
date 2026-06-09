@@ -355,6 +355,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exercise-2-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 2: Questions
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -377,6 +388,17 @@
     <span class="md-ellipsis">
       
         Exercise 3: Instructions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-3-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 3: Question
       
     </span>
   </a>
@@ -411,6 +433,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exercise-4-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 4: Question
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -433,6 +466,17 @@
     <span class="md-ellipsis">
       
         Exercise 5: Instructions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-5-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 5: Question
       
     </span>
   </a>
@@ -576,6 +620,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exercise-2-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 2: Questions
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -598,6 +653,17 @@
     <span class="md-ellipsis">
       
         Exercise 3: Instructions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-3-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 3: Question
       
     </span>
   </a>
@@ -632,6 +698,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exercise-4-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 4: Question
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -654,6 +731,17 @@
     <span class="md-ellipsis">
       
         Exercise 5: Instructions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-5-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 5: Question
       
     </span>
   </a>
@@ -687,7 +775,7 @@
 <h2 id="preparation">Preparation</h2>
 <p>Please download the following Excel file. The file includes the necessary data for the following exercises and a template to store the results of the exercises. If not done so previously, please also download the API example template provided on the ePiE webpage and load it into ePiE as described under "How to: The ePiE App - API properties".</p>
 <p><a class="md-button" download="API_GAM_Workshop" href="../API_workshop_template.xlsx">Workshop Template</a></p>
-<p>In the table below, an overview is presented about the following exercises and the key model parameters we are investigating.   </p>
+<p>In the table below, an overview is presented about the following exercises and the key model parameters we are investigating.</p>
 <table>
 <thead>
 <tr>
@@ -772,6 +860,7 @@
 <h3 id="exercise-1-questions">Exercise 1: Questions</h3>
 <ol>
 <li>How do the predicted removal rates of SimpleTreat and PEPPER compare?</li>
+<li>Can the differences in the PECs be explained by the difference in removal rates?</li>
 </ol>
 <h2 id="exercise-2-consumption-data">Exercise 2: Consumption Data</h2>
 <p>Data on API consumption is crucial in driving ePiE's model outcomes. However, specific data might be difficult to obtain for individual APIs and countries. To address these issues, we refer to the PREMIER guidance document 4 (In prep.), which describes different approaches for predicting consumption data. </p>
@@ -783,7 +872,12 @@
 <li>Use SimpleTreat under the "WWTP removal" tab</li>
 <li>Select the Ouse (Yorkshire) and the Rhine 1 basin for average yearly flow conditions under the "River basin" tab</li>
 <li>For the consumption data, use once 8.6 g/capita/year for the year 2019 and once 6.21 g/capita/year for the year 2017 under the "Consumption data" tab</li>
-<li>Compare the predicted concentrations under the "Output statistics" tab for both river basins</li>
+<li>Run ePiE and assess the predicted concentrations under the "Output statistics" tab</li>
+</ol>
+<h3 id="exercise-2-questions">Exercise 2: Questions</h3>
+<ol>
+<li>8.6 g/capita/year refer to European average data, 6.21 g/capita/year is country specific for the UK. Which factors influence the uncertainty around consumption data?</li>
+<li>Assume you only have the consumption data from above and would like to predict concentrations for ibuprofen for the Netherlands, for the year 2020. How would you proceed?</li>
 </ol>
 <h2 id="exercise-3-excretion-factors">Exercise 3: Excretion Factors</h2>
 <p>Next to removal rates and consumption data, the excreted fraction of an API after administration is a critical and sensitive parameter driving the model results. Data on excretion, also referred to as elimination, can normally be found in the summary of product characteristics (SmPCs), which outlines how to use the medicine safely including maximum dosage, potential side effects, and also data on metabolism. Nevertheless, reported excretion rates may differ between different sources. In this exercise, we will assess the influence of this parameter for ibuprofen.</p>
@@ -802,6 +896,10 @@
 <li>Use 6.21 g/capita/year as consumption data for the year 2017 under the "Consumption data" tab</li>
 <li>Compare the predicted concentrations for the three excretion fractions (e.g., f_uf = 0.1; 0.2; 1) under the "Output statistics" tab</li>
 </ol>
+<h3 id="exercise-3-question">Exercise 3: Question</h3>
+<ol>
+<li>Uncertainity of the excreted fractions can significantly influence the PEC. Do such uncertainties influence PEC more for APIs with low or high excretion?</li>
+</ol>
 <h2 id="exercise-4-excretion-and-removal-rates">Exercise 4: Excretion and Removal Rates</h2>
 <p>The previous exercises demonstrated how individual model input parameters and uncertainty around these can substantially influence the model outcomes. This exercise will assess the influence of two parameters in combination: Excretion and removal rates. For this, we will assume a worst-case scenario, i.e. full excretion and no removal.</p>
 <h3 id="exercise-4-instructions">Exercise 4: Instructions</h3>
@@ -812,8 +910,12 @@
 </li>
 <li>Set both removal fractions to 0 under the "WWTP removal" tab </li>
 <li>Select the Ouse (Yorkshire) basin for average yearly flow conditions (default) under the "River basin" tab</li>
-<li>Use (<mark><strong>UK DATA</strong></mark>) as consumption data for the year 2019 under the "Consumption data" tab</li>
-<li>Compare the predicted concentrations against the predicted concentrations to the results from exercises 2 &amp; 3 </li>
+<li>Use 6.21 g/capita/year as consumption data for the year 2017 under the "Consumption data" tab</li>
+<li>Run ePiE and compare the predicted concentrations against the predicted concentrations to the results from exercises 2 &amp; 3 </li>
+</ol>
+<h3 id="exercise-4-question">Exercise 4: Question</h3>
+<ol>
+<li>Based on your previous assessments, you have seen that multiple parameters (e.g., consumption, f_uf, removal) or parameter combination influences the predicted concentrations. How would you approach such uncertainties in your assessment to identify the most influential parameters? </li>
 </ol>
 <h2 id="exercise-5-comparison-to-conventional-exposure-assessments">Exercise 5: Comparison to Conventional Exposure Assessments</h2>
 <p>Predicting environmental concentrations can be achieved by multiple ways. The most conventional and conservative approach follows the equation below: </p>
@@ -835,6 +937,10 @@ PEC_{SW} = \frac{\text{Administered Dose} \times \text{Market Penetration}}{\tex
 </li>
 <li>Use 4.38<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> g/capita/year as consumption data for the year 2019 under the "Consumption data" tab</li>
 <li>Compare the predicted concentrations against the results from exercises 2 and 3 and per hydrological scenario.</li>
+</ol>
+<h3 id="exercise-5-question">Exercise 5: Question</h3>
+<ol>
+<li>The exposure assessment above ignores many ePiE relevant factors. Can you explain why it is still a useful assessment approach?</li>
 </ol>
 <div class="footnote">
 <hr>

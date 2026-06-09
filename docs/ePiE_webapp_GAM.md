@@ -22,7 +22,7 @@ After accepting, you will be guided to the ePiE starting page, which gives you a
 
 ## API Properties
 
-On the “API properties” page, you will see two tables, i.e. one with the API properties (1) and API-specific fate parameters (2). By hovering over the columns, a pop- up will appear above the respective table, explaining the content of the column (3).  
+On the “API properties” page, you will see two tables, i.e. one with the API properties (1) and API-specific fate parameters (2). By hovering over the columns, a pop-up will appear above the respective table, explaining the content of the column (3).  
 
 <img src="../img/screenshots/ePiE/screens_3.png" alt="img3" style="width: 100%; max-width: 600px; height: 50%;" />
 
