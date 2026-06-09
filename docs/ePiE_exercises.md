@@ -7,7 +7,7 @@ Please download the following Excel file. The file includes the necessary data f
 
 [Workshop Template](API_workshop_template.xlsx){: .md-button download="API_GAM_Workshop"}
 
-In the table below, an overview is presented about the following exercises and the key model parameters we are investigating.   
+In the table below, an overview is presented about the following exercises and the key model parameters we are investigating.
 
 | Exercise |                      Objective                      |                          Model    Parameters                          |
 |:--------:|:---------------------------------------------------:|:----------------------------------------------------------------:|
@@ -85,7 +85,8 @@ Please compare the results using the default SimpleTreat and the PEPPER model us
 
 ### Exercise 1: Questions
 
-1.	How do the predicted removal rates of SimpleTreat and PEPPER compare?
+1. How do the predicted removal rates of SimpleTreat and PEPPER compare?
+2. Can the differences in the PECs be explained by the difference in removal rates?
 
 
 ## Exercise 2: Consumption Data
@@ -102,8 +103,12 @@ Please assess the predicted concentrations for ibuprofen using the instructions 
 2. Use SimpleTreat under the "WWTP removal" tab
 3. Select the Ouse (Yorkshire) and the Rhine 1 basin for average yearly flow conditions under the "River basin" tab
 4. For the consumption data, use once 8.6 g/capita/year for the year 2019 and once 6.21 g/capita/year for the year 2017 under the "Consumption data" tab
-5. Compare the predicted concentrations under the "Output statistics" tab for both river basins
+5. Run ePiE and assess the predicted concentrations under the "Output statistics" tab
 
+### Exercise 2: Questions
+
+1. 8.6 g/capita/year refer to European average data, 6.21 g/capita/year is country specific for the UK. Which factors influence the uncertainty around consumption data?
+2. Assume you only have the consumption data from above and would like to predict concentrations for ibuprofen for the Netherlands, for the year 2020. How would you proceed?
 
 
 ## Exercise 3: Excretion Factors
@@ -127,6 +132,10 @@ Next to removal rates and consumption data, the excreted fraction of an API afte
 [^3]: https://pdf.hres.ca/dpd_pm/00025353.PDF
 
 
+### Exercise 3: Question
+
+1. Uncertainity of the excreted fractions can significantly influence the PEC. Do such uncertainties influence PEC more for APIs with low or high excretion?
+
 ## Exercise 4: Excretion and Removal Rates
 
 The previous exercises demonstrated how individual model input parameters and uncertainty around these can substantially influence the model outcomes. This exercise will assess the influence of two parameters in combination: Excretion and removal rates. For this, we will assume a worst-case scenario, i.e. full excretion and no removal.
@@ -137,9 +146,12 @@ The previous exercises demonstrated how individual model input parameters and un
     2. Change f_uf to 1.0 
 2. Set both removal fractions to 0 under the "WWTP removal" tab 
 3. Select the Ouse (Yorkshire) basin for average yearly flow conditions (default) under the "River basin" tab
-4. Use (<mark>**UK DATA**</mark>) as consumption data for the year 2019 under the "Consumption data" tab
-5. Compare the predicted concentrations against the predicted concentrations to the results from exercises 2 & 3 
+4. Use 6.21 g/capita/year as consumption data for the year 2017 under the "Consumption data" tab
+5. Run ePiE and compare the predicted concentrations against the predicted concentrations to the results from exercises 2 & 3 
 
+### Exercise 4: Question
+
+1. Based on your previous assessments, you have seen that multiple parameters (e.g., consumption, f_uf, removal) or parameter combination influences the predicted concentrations. How would you approach such uncertainties in your assessment to identify the most influential parameters? 
 
 
 ## Exercise 5: Comparison to Conventional Exposure Assessments
@@ -166,3 +178,6 @@ This approach represents a conservative scenario, assuming no removal inside WWT
 
 [^4]: 1.2 g is the maximum daily dose of ibuprofen; 1.2 g * 0.01 * 365 days = 4.38 g/capita/year
 
+### Exercise 5: Question
+
+1. The exposure assessment above ignores many ePiE relevant factors. Can you explain why it is still a useful assessment approach?

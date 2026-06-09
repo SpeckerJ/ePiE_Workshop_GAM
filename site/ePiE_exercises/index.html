@@ -316,6 +316,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exercise-1-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 1: Questions
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -526,6 +537,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#exercise-1-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise 1: Questions
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -703,9 +725,8 @@
 </tbody>
 </table>
 <h2 id="exercise-1-simpletreat-vs-pepper">Exercise 1: SimpleTreat vs. PEPPER</h2>
-<p>ePiE stands out for its high degree of customizability. Most parameters can be overwritten, allowing users to use experimental data or other models.
-In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environmental Pollutant PERsistence
-) model, which is freely accessible as a web application via the following <a href="https://pepper-app.streamlit.app/">link</a>. More information on the PEPPER model can be found under the web application or in its respective publication by <a href="https://pubs.acs.org/doi/full/10.1021/acs.est.5c09314">Cordero Solano et al. 2025</a>.</p>
+<p>ePiE stands out for its high degree of customizability. Most parameters can be overwritten, allowing users to use experimental data or other models. In this exercise, we will compare two tools to estimate WWTP removal, i.e. SimpleTreat and PEPPER (Predict Environmental Pollutant PERsistence).</p>
+<p>PEPPER is freely accessible as a web application via the following <a href="https://pepper-app.streamlit.app/">link</a>. More information on the PEPPER model can be found under the web application or in its respective publication by <a href="https://pubs.acs.org/doi/full/10.1021/acs.est.5c09314">Cordero Solano et al. (2025)</a>.</p>
 <p>To use PEPPER, please follow the points outlined below:</p>
 <ol>
 <li>Go to the PEPPER website</li>
@@ -744,9 +765,13 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 <li>Predict the breakthrough for ibuprofen, acetaminophen, and sulfamethoxazole as calculated by PEPPER and convert the results to the removed fraction</li>
 <li>Apply the default properties in ePiE under the "API properties" tab</li>
 <li>Compare the removal fractions of both compounds from SimpleTreat and the PEPPER model under the "WWTP removal" tab</li>
-<li>Select the Ouse (Yorkshire) and the Rhine 1 basin for average yearly flow conditions under the "River basin" tab</li>
+<li>Select the "Ouse (Yorkshire)" and the "Rhine 1" basin for average yearly flow conditions under the "River basin" tab</li>
 <li>Assume a consumption of 1 g/capita/year for the year 2019 under the "Consumption data" tab</li>
-<li>Compare the predicted concentrations for both compounds and river basins under the "Output statistics" tab</li>
+<li>Run ePiE and assess the predicted concentrations under the "Output statistics" tab</li>
+</ol>
+<h3 id="exercise-1-questions">Exercise 1: Questions</h3>
+<ol>
+<li>How do the predicted removal rates of SimpleTreat and PEPPER compare?</li>
 </ol>
 <h2 id="exercise-2-consumption-data">Exercise 2: Consumption Data</h2>
 <p>Data on API consumption is crucial in driving ePiE's model outcomes. However, specific data might be difficult to obtain for individual APIs and countries. To address these issues, we refer to the PREMIER guidance document 4 (In prep.), which describes different approaches for predicting consumption data. </p>
@@ -765,7 +790,6 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 <h3 id="exercise-3-instructions">Exercise 3: Instructions</h3>
 <ol>
 <li>Adjust the default parameter of ibuprofen for its excreted fraction (f_uf) under the "API properties" tab<ol>
-<li>The default parameter for f_uf is 0.2</li>
 <li>Change f_uf to 0.1<ol>
 <li>Reported values range between 0.1 - 0.3 according to <sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></li>
 </ol>
@@ -775,7 +799,7 @@ In this exercise, we will compare SimpleTreat to the PEPPER (Predict Environment
 </li>
 <li>Use SimpleTreat under the "WWTP removal" tab</li>
 <li>Select the Ouse (Yorkshire) basin for average yearly flow conditions (default) under the "River basin" tab</li>
-<li>Use (<mark><strong>UK DATA</strong></mark>) as consumption data for the year 2019 under the "Consumption data" tab</li>
+<li>Use 6.21 g/capita/year as consumption data for the year 2017 under the "Consumption data" tab</li>
 <li>Compare the predicted concentrations for the three excretion fractions (e.g., f_uf = 0.1; 0.2; 1) under the "Output statistics" tab</li>
 </ol>
 <h2 id="exercise-4-excretion-and-removal-rates">Exercise 4: Excretion and Removal Rates</h2>
